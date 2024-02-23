@@ -1,0 +1,134 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-icons {
+  display: flex;
+}
+header img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+main {
+  padding: 20px;
+}
+.film-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.film-detail img {
+  max-width: 50%;
+  margin-right: 20px;
+}
+.film-detail-info {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.ratings {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.stars {
+  font-size: 24px;
+  color: gold;
+}
+
+.stars,
+.imdb,
+.views,
+.duration {
+  margin-right: 20px;
+}
+
+.film-detail-info h2 {
+  margin-top: 0;
+}
+.film-detail-info p {
+  margin: 10px;
+}
+.film-detail-info button {
+  background-color: red;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.film-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.film-card-popular,
+.film-card-recommended {
+  width: calc(33.33% - 10px);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.film-card-popular img,
+.film-card-recommended img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  max-height: 300px;
+}
+
+.popular h2,
+.recommended h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.show-all {
+  float: right;
+  cursor: pointer;
+}
+.show-all:hover {
+  text-decoration: underline;
+}
+nav ul {
+  list-style-type: none;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .film-card-popular,
+  .film-card-recommended {
+    width: calc(50% - 10px);
+  }
+}
