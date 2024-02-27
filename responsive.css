@@ -1,0 +1,362 @@
+@media (min-width: 1045px) and (max-width: 1168px) {
+  .header-nav a {
+    font-size: 100%;
+    text-align: center;
+  }
+
+  .red-buton a {
+    font-size: 1.2vw;
+  }
+}
+
+@media (min-width: 834.1px) and (max-width: 1044.99px) {
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-left-items {
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    gap: 0;
+  }
+
+  .header-nav {
+    text-align: center;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .right-items {
+    order: -1;
+    position: absolute;
+    top: 3.5vh;
+    right: 1vw;
+  }
+
+  .box-items {
+    column-gap: 5px;
+  }
+
+  .box-left-items {
+    row-gap: 10%;
+  }
+  .box-left-items h2 {
+    font-size: 2vw;
+  }
+
+  .header-nav a {
+    font-size: 100%;
+    text-align: center;
+  }
+
+  .red-buton a {
+    font-size: 1.2vw;
+    width: 100%;
+  }
+
+  /* Footer düzenlemeleri */
+
+  .footer-container {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .footer.info {
+    width: 100%;
+  }
+
+  .footer-social {
+    width: 30%;
+  }
+
+  .footer-apps {
+    width: 50%;
+  }
+
+  .footer-apps-images {
+    padding: 0;
+  }
+
+  .footer-apps-images img {
+    width: 25%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/*Tablet için*/
+@media (min-width: 500px) and (max-width: 834px) {
+  .position-sticky {
+    position: sticky;
+    top: 10px;
+  }
+
+  .main-content-container {
+    display: flex;
+  }
+
+  .content-container {
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+  }
+
+  /*header*/
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-left-items {
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    gap: 0;
+  }
+
+  .header-nav {
+    text-align: center;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .header-nav a {
+    font-size: 70%;
+    text-align: center;
+  }
+
+  .right-items {
+    order: -1;
+    position: absolute;
+    top: 3.5vh;
+    right: 1vw;
+  }
+
+  .header-search {
+    width: auto;
+  }
+
+  .header-search input {
+    font-size: 0.5rem;
+  }
+
+  /*Hero content */
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  /*content */
+
+  .movies-section {
+    flex-wrap: wrap;
+  }
+
+  .box-items {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+  }
+
+  .box-left-items {
+    row-gap: 10%;
+  }
+
+  .box-items h2 {
+    font-size: 2vw;
+  }
+
+  .red-buton.big {
+    width: 50%;
+  }
+
+  .red-buton.small {
+    width: 100%;
+    height: auto;
+  }
+
+  .red-buton a {
+    font-size: 2vw;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer düzenlemeleri */
+
+  .footer-container {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .footer.info {
+    width: 100%;
+  }
+
+  .footer-social {
+    width: 30%;
+  }
+
+  .footer-apps {
+    width: 50%;
+  }
+
+  .footer-apps-images {
+    padding: 0;
+  }
+
+  .footer-apps-images img {
+    width: 25%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 499.99px) {
+  /*header*/
+  .header-container {
+    flex-direction: column;
+  }
+
+  .header-left-items {
+    flex-direction: column;
+    width: 100%;
+
+    gap: 0;
+  }
+
+  .header-nav {
+    text-align: center;
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .header-nav a {
+    font-size: 70%;
+    text-align: center;
+  }
+
+  .header-search {
+    width: auto;
+  }
+
+  .header-search input {
+    font-size: 0.5rem;
+  }
+
+  .right-items {
+    position: relative;
+  }
+
+  #notification {
+    position: absolute;
+    top: -150px;
+    right: -20vw;
+    height: 4vh;
+    width: 8vw;
+  }
+
+  #user-profile {
+    position: absolute;
+    top: -150px;
+    right: -30vw;
+    height: 4vh;
+    width: 8vw;
+  }
+
+  /*Hero content */
+
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  /*content */
+
+  .movies-section .box-items:last-child {
+    display: none;
+  }
+
+  .box-items {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .box-left-items {
+    row-gap: 10%;
+  }
+
+  .box-items h2 {
+    font-size: 3vw;
+  }
+
+  .red-buton.big {
+    width: 33%;
+  }
+
+  .red-buton.small {
+    width: 100%;
+    height: auto;
+  }
+
+  .red-buton a {
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Footer düzenlemeleri */
+
+  .footer-container {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: start;
+    gap: 1rem;
+  }
+
+  .footer.info {
+    width: 100%;
+  }
+
+  .footer-social {
+    width: 30%;
+  }
+
+  .footer-apps {
+    width: 50%;
+  }
+
+  .footer-apps-images {
+    padding: 0;
+  }
+
+  .footer-apps-images img {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+  }
+}

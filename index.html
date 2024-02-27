@@ -1,116 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Film Sitesi</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-  </head>
-  <body>
-    <!-- header bölümü... -->
-    <header>
-      <h1>WITFLEX</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Anasayfa</a></li>
-          <li><a href="#">Sinema Filmleri</a></li>
-          <li><a href="#">TV Dizileri</a></li>
-          <li><a href="#">Türler</a></li>
-        </ul>
-      </nav>
-      <div class="header-icons">
-        <i class="ph ph-magnifying-glass"></i>
-        <i class="ph ph-bell"></i>
-        <i class="ph ph-user-circle"></i>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Film Sitesi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+
+<body>
+  <!-- header bölümü... -->
+  <header>
+
+    <div class="header-container">
+      <div class="header-left-items">
+        <h1>WITFLEX</h1>
+        <nav class="header-nav">
+          <a href="#">Top 250 Movies</a>
+          <a href="#">Most Rated Movies</a>
+          <a href="#">Top IMDB 50 Movies</a>
+          <a href="#">Top Box Office</a>
+        </nav>
       </div>
-    </header>
-    <!-- main bölümü... -->
-    <main>
-      <section class="film-detail">
-        <div class="film-detail-info">
-          <h2>Film Adı</h2>
-          <div class="ratings">
-            <div class="stars">
-              <i class="ph ph-star-fill"></i>
-              <i class="ph ph-star-fill"></i>
-              <i class="ph ph-star-fill"></i>
-              <i class="ph ph-star-fill"></i>
-              <i class="ph ph-star"></i>
+
+      <div class="right-items">
+        <form class="header-search">
+          <input type="search" placeholder="Search movie">
+          <button type="submit">Search</button>
+        </form>
+        <div class="header-icons">
+          <i class="ph ph-magnifying-glass"></i>
+          <i class="ph ph-bell"></i>
+          <i class="ph ph-user-circle"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- main bölümü... -->
+  <main>
+    <div class="main-content-container">
+      <section class="hero-container">
+
+        <div class="hero-content-container position-sticky">
+          <h1>Pride And Prejudice</h1>
+          <div class="hero-content position-sticky">
+            <div class="movie-details ">
+
+              <div class="rating">
+                <div class="first-details">
+                  <div class="left-stars-details">
+                    <div class="stars">
+                      <i class="ph ph-star checked"></i>
+                      <i class="ph ph-star checked"></i>
+                      <i class="ph ph-star checked"></i>
+                      <i class="ph ph-star checked"></i>
+                      <i class="ph ph-star unchecked"></i>
+                    </div>
+                    <p>7.3 IMDB</p>
+                    <div class="movie-box-info">
+                      <p class="age-limit">+16</p>
+                      <p class="bold">2hr 21min</p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ea perspiciatis, quod
+                      maxime molestiae, libero quidem veniam nostrum, debitis recusandae cupiditate officia accusantium.
+                      Pariatur alias ea nostrum, aperiam nihil corrupti.</p>
+                    <div class="movie-info">
+                      <p><span class="bold red-text">Oyuncular:</span> Michelle Yeoh, Stephanie Hsu,Ke Huy Quan</p>
+                      <p><span class="bold red-text">Tür:</span> Action, Adventure, Comedy</p>
+                      <p> <span class="bold red-text">Etiketler:</span> Lorem Ipsum Color</p>
+                    </div>
+
+                    <div class="red-buton big">
+                      <i class="ph ph-play">></i>
+                      <a href="#">Play Now</a>
+                    </div>
+
+                  </div>
+                  <img src="https://ichef.bbci.co.uk/images/ic/1200x675/p09qmb8d.jpg" alt="Film 1" />
+                </div>
+              </div>
             </div>
-            <div class="imdb"></div>
-            <div class="views"></div>
-            <div class="duration"></div>
           </div>
-          <p>film açıklaması</p>
-          <p>Oyuncular: oyuncu1, oyuncu2</p>
-          <p>Tür: Romantik, Dram</p>
-          <p>Etiketler: etiket1, etiket2</p>
-          <button>Şimdi İzle</button>
-        </div>
-        <img
-          src="https://ichef.bbci.co.uk/images/ic/1200x675/p09qmb8d.jpg"
-          alt="Film 1"
-        />
-      </section>
-
-      <section class="film-list">
-        <!-- popüler filmler listesi... -->
-        <h4>Popüler Filmler <span class="show-all">Tümünü Göster</span></h4>
-        <div class="film-card-popular">
-          <img
-            src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7aec4fae737e79192c19ace8a152e9b003926bc5dc36e0f6a1a195ccfeca0984._RI_TTW_.jpg"
-            alt="Film 2"
-          />
-          <h3>Film 2</h3>
-        </div>
-
-        <div class="film-card-popular">
-          <img
-            src="https://m.media-amazon.com/images/M/MV5BYjkyMWFkNGQtY2IwOS00MDQyLTg5NDMtMGQxZWQwNjJhN2M4XkEyXkFqcGdeQXVyOTQ2MjQ3MTI@._V1_.jpg"
-            alt="Film 3"
-          />
-          <h3>Film 3</h3>
-        </div>
-
-        <div class="film-card-popular">
-          <img
-            src="https://images.bauerhosting.com/legacy/empire-tmdb/films/14836/images/obBsMjC9dkDeoYsLxHURikW87UZ.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80"
-            alt="Film 4"
-          />
-          <h3>Film 4</h3>
-        </div>
-        <!-- senin için önerilenler listesi... -->
-        <h4>
-          Senin İçin Önerilenler <span class="show-all">Tümünü Göster</span>
-        </h4>
-
-        <div class="film-card-recommended">
-          <img
-            src="https://img.piri.net/mnresize/900/-/resim/imagecrop/2020/05/19/12/15/resized_1d134-4e212d69af997a32ahlatagaci.jpg"
-            alt="Film 5"
-          />
-          <h3>Film 5</h3>
-        </div>
-
-        <div class="film-card-recommended">
-          <img
-            src="https://image.tmdb.org/t/p/original/ewMRNXnPWmSTxtfGJeN1dGsqynt.jpg"
-            alt="Film 6"
-          />
-          <h3>Film 6</h3>
-        </div>
-
-        <div class="film-card-recommended">
-          <img
-            src="https://2.bp.blogspot.com/-ou8BadliIiw/T8YCL2DFB2I/AAAAAAAAA_E/dSskAOe6tQ4/s1600/3idiot-34-12x9.jpg"
-            alt="Film 7"
-          />
-          <h3>Film 7</h3>
         </div>
       </section>
-    </main>
-    <!-- footer bölümü... -->
-    <footer></footer>
-  </body>
+
+      <!-- popüler filmler listesi... -->
+      <section class="content-container">
+        <div class="first-content">
+          <div class="first-content-details content-details bold">
+            <p>Popular Movies</p>
+            <p>View All</p>
+          </div>
+          <div class="movies-section">
+
+            <!-- lunchbox -->
+            <div class="box-items">
+              <div class="box-left-items">
+                <h2>Lunchbox</h2>
+                <div class="movie-box-infor">
+                  <p class="age-limit">+16</p>
+                  <p class="bold">2hr 21min</p>
+                </div>
+                <div class="red-buton small">
+                  <i class="ph ph-play"></i>
+                  <a href="#">Play Now</a>
+                </div>
+              </div>
+              <div class="box-image">
+                <img
+                  src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/7aec4fae737e79192c19ace8a152e9b003926bc5dc36e0f6a1a195ccfeca0984._RI_TTW_.jpg"
+                  alt="">
+              </div>
+            </div>
+
+            <!-- süt kardeşler -->
+            <div class="box-items">
+              <div class="box-left-items">
+                <h2>Süt Kardeşler</h2>
+                <div class="movie-box-infor">
+                  <p class="age-limit">+16</p>
+                  <p class="bold">2hr 21min</p>
+                </div>
+                <div class="red-buton small">
+                  <i class="ph ph-play"></i>
+                  <a href="#">Play Now</a>
+                </div>
+              </div>
+              <div class="box-image">
+                <img
+                  src="https://m.media-amazon.com/images/M/MV5BYjkyMWFkNGQtY2IwOS00MDQyLTg5NDMtMGQxZWQwNjJhN2M4XkEyXkFqcGdeQXVyOTQ2MjQ3MTI@._V1_.jpg"
+                  alt="">
+              </div>
+            </div>
+
+            <!-- coraline -->
+            <div class="box-items">
+              <div class="box-left-items">
+                <h2>Caroline</h2>
+                <div class="movie-box-infor">
+                  <p class="age-limit">+16</p>
+                  <p class="bold">2hr 21min</p>
+                </div>
+                <div class="red-buton small">
+                  <i class="ph ph-play"></i>
+                  <a href="#">Play Now</a>
+                </div>
+              </div>
+              <div class="box-image">
+                <img
+                  src="https://images.bauerhosting.com/legacy/empire-tmdb/films/14836/images/obBsMjC9dkDeoYsLxHURikW87UZ.jpg?ar=16%3A9&fit=crop&crop=top&auto=format&w=undefined&q=80"
+                  alt="">
+              </div>
+            </div>
+
+            <!-- senin için önerilenler listesi... -->
+            <div class="second-content">
+              <div class="second-content-details content-details bold">
+                <p>Recommended For You</p>
+                <p>Review All</p>
+              </div>
+              <div class="movies-section">
+                <!-- ahlat ağacı -->
+                <div class="box-items">
+                  <div class="box-left-items">
+                    <h2>Ahlat Ağacı</h2>
+                    <div class="movie-box-infor">
+                      <p class="age-limit">+16</p>
+                      <p class="bold">2hr 21min</p>
+                    </div>
+                    <div class="red-buton small">
+                      <i class="ph ph-play"></i>
+                      <a href="#">Play Now</a>
+                    </div>
+                  </div>
+                  <div class="box-image">
+                    <img
+                      src="https://img.piri.net/mnresize/900/-/resim/imagecrop/2020/05/19/12/15/resized_1d134-4e212d69af997a32ahlatagaci.jpg"
+                      alt="">
+                  </div>
+                </div>
+
+                <!-- talihsiz serüvenler zinciri -->
+                <div class="box-items">
+                  <div class="box-left-items">
+                    <h2>Talihsiz Serüvenler Zinciri</h2>
+                    <div class="movie-box-infor">
+                      <p class="age-limit">+16</p>
+                      <p class="bold">2hr 21min</p>
+                    </div>
+                    <div class="red-buton small">
+                      <i class="ph ph-play"></i>
+                      <a href="#">Play Now</a>
+                    </div>
+                  </div>
+                  <div class="box-image">
+                    <img src="https://image.tmdb.org/t/p/original/ewMRNXnPWmSTxtfGJeN1dGsqynt.jpg" alt="">
+                  </div>
+                </div>
+
+                <!-- 3 idiots -->
+                <div class="box-items">
+                  <div class="box-left-items">
+                    <h2>3 Idiots</h2>
+                    <div class="movie-box-infor">
+                      <p class="age-limit">+16</p>
+                      <p class="bold">2hr 21min</p>
+                    </div>
+                    <div class="red-buton small">
+                      <i class="ph ph-play"></i>
+                      <a href="#">Play Now</a>
+                    </div>
+                  </div>
+                  <div class="box-image">
+                    <img
+                      src="https://2.bp.blogspot.com/-ou8BadliIiw/T8YCL2DFB2I/AAAAAAAAA_E/dSskAOe6tQ4/s1600/3idiot-34-12x9.jpg"
+                      alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- footer bölümü... -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <nav class="footer-nav">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">FAQ</a>
+          <a href="#">Watch List</a>
+        </nav>
+      </div>
+
+      <p><span class="bold">buraya</span>bak</p>
+
+
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="footer-social-images">
+          <img src="https://www.facebook.com/images/fb_icon_325x325.png" alt="">
+          <img
+            src="https://store-images.s-microsoft.com/image/apps.60673.9007199266244427.4d45042b-d7a5-4a83-be66-97779553b24d.5d82b7eb-9734-4b51-b65d-a0383348ab1b"
+            alt="">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/800px-YouTube_social_white_square_%282017%29.svg.png"
+            alt="">
+        </div>
+      </div>
+
+      <div class="footer-apps">
+        <h4>Apps</h4>
+        <div class="footer-apps-images">
+          <img
+            src="https://lh3.googleusercontent.com/zyNaxbqP-GCz5yQQZGWasRcooXrKtGBupZx3WB_R3YtNRNl6_dhic4m8fT2U7qFzOZtKuZfewWitUVehxeEVB_vguXd2uMs5uc7qgZdjWt-NW3T7EpU=s870"
+            alt="">
+          <img src="https://www.apple.com/v/app-store/b/images/overview/icon_appstore__ev0z770zyxoy_large_2x.png"
+            alt="">
+        </div>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
 </html>
